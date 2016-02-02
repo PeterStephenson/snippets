@@ -9,7 +9,7 @@
 
                 foreach (var service in servicesToRun)
                 {
-                    startMethod.Invoke(service, new[] { args });
+                    startMethod.Invoke(service, new object[] { args });
                 }
 
                 while (Console.ReadKey().Key != ConsoleKey.Escape) { }
