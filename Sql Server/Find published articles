@@ -1,0 +1,20 @@
+Use distribution
+GO
+
+DECLARE @ArticleName SysName
+SET @ArticleName = '<ArticleName,,>'
+
+SELECT
+     MSP.publication AS 'Publication Name'
+    ,MSA.publisher_db AS 'Database Name'
+    ,MSA.article AS 'Article Name'
+    ,MSA.source_owner AS 'Schema Name'
+    ,MSA.source_object AS 'Table Name'
+FROM
+    DBO.MSarticles AS MSA
+INNER JOIN DBO.MSpublications AS MSP
+        ON MSA.publication_id = MSP.publication_id
+    WHERE MSA.article = @ArticleName 
+        ORDER BY
+            MSP.publication, MSA.article;
+GO
