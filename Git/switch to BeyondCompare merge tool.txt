@@ -1,0 +1,9 @@
+[merge]
+	tool = bc4
+[diff]
+	tool = bc4
+[mergetool "bc4"]
+	cmd = \"c:/program files (x86)/beyond compare 4/bcomp.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+	trustExitCode = true
+[difftool "bc4"]
+	cmd = \"c:/program files (x86)/beyond compare 4/bcomp.exe\" \"$LOCAL\" \"$REMOTE\"
