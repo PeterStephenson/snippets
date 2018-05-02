@@ -1,1 +1,1 @@
-git config --global core.editor "'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -nosession -noPlugin"
+git config --global core.editor "'C:\Users\peter.stephenson\OneDrive\Software\Notepad++\notepad++.exe' -multiInst -nosession -noPlugin"
