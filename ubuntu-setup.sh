@@ -45,6 +45,7 @@ ssh-keygen
 
 # Rider
 sudo snap install rider --classic
+echo fs.inotify.max_user_instances=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 
 # .Net Core
 wget https://packages.microsoft.com/config/ubuntu/19.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
