@@ -54,7 +54,11 @@ sudo apt-get update
 sudo apt-get install dotnet-sdk-3.1
 sudo apt-get install aspnetcore-runtime-3.1
 
+# Powershell
 sudo snap install powershell --classic
+
+pwsh -c "PowerShellGet\Install-Module posh-git -Scope CurrentUser -AllowPrerelease -Force"
+echo "Import-Module Posh-Git" | sudo tee .config/powershell/Microsoft.PowerShell_profile.ps1
 
 # JS
 sudo apt install nodejs
