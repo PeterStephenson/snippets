@@ -60,6 +60,13 @@ sudo snap install powershell --classic
 pwsh -c "PowerShellGet\Install-Module posh-git -Scope CurrentUser -AllowPrerelease -Force"
 echo "Import-Module Posh-Git" | sudo tee .config/powershell/Microsoft.PowerShell_profile.ps1
 
+echo "function Launch-Rider {                                                     
+  param ( [string]$file ) 
+  Start-Process rider.sh $file -RedirectStandardError /dev/null
+}" | sudo tee -a .config/powershell/Microsoft.PowerShell_profile.ps1
+
+echo "Set-Alias -Name rider -Value Launch-Rider" | sudo tee -a .config/powershell/Microsoft.PowerShell_profile.ps1
+
 # JS
 sudo apt install nodejs
 sudo apt install npm
