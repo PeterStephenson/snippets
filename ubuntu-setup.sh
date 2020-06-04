@@ -33,9 +33,8 @@ git config --global user.name "Peter Stephenson"
 git config --global user.email "github@peter-stephenson.co.uk"
 git config --global alias.recent "log -10 --oneline"
 
-git config --global merge.tool bc4
-git config --global mergetool.bc4.trustExitCode true
-git config --global diff.tool bc4
+git config --global merge.tool bc
+git config --global diff.tool bc
 
 git config --global core.editor "code --wait"
 
