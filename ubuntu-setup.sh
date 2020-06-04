@@ -54,6 +54,8 @@ sudo apt-get update
 sudo apt-get install dotnet-sdk-3.1
 sudo apt-get install aspnetcore-runtime-3.1
 
+sudo snap install powershell --classic
+
 # JS
 sudo apt install nodejs
 sudo apt install npm
