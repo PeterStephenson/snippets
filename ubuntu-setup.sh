@@ -5,7 +5,7 @@
 # Allow HTTPS packages
 sudo apt-get update
 
-$ sudo apt-get install \
+sudo apt-get install \
     apt-transport-https \
     ca-certificates \
     curl \
@@ -38,6 +38,10 @@ git config --global mergetool.bc4.trustExitCode true
 git config --global diff.tool bc4
 
 git config --global core.editor "code --wait"
+
+sudo apt-get install xclip
+
+ssh-keygen
 
 # Rider
 sudo snap install rider --classic
